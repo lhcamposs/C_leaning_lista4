@@ -5,7 +5,7 @@ void main(){
 	char codigo;
 
 	while(valor != 0){
-	    printf("Digite o valor: \n");
+		printf("Digite o valor: \n");
 		scanf("%f", &valor);
 		if (valor <= 0){
 		    break;
@@ -13,7 +13,7 @@ void main(){
 		getchar();
 		
 		printf("Digite o codigo da mercadoria: \n");
-		printf("L- limpeza A- alimentacao H- higiene\n");
+		printf("l- limpeza a- alimentacao h- higiene\n");
 		scanf("%c*c", &codigo);
 		getchar();
 		
