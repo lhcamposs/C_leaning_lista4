@@ -50,7 +50,7 @@ void main()
     
     
     
-    printf("O porcentual de pessoas que responderam bom: %f\n", porcentagem);
+    printf("O percentual de pessoas que responderam bom: %f\n", porcentagem);
     printf("A quantidade de pessoas que responderam regular: %d", regular);
     
 }
