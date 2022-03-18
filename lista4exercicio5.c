@@ -5,7 +5,7 @@ void main()
     int idade, opiniao, bom=0, regular=0, excelente=0, i;
     float porcentagem, mediaIdade=0;
     
-    for(i=0; i<3; i++){
+    for(i=0; i<20; i++){
         printf("Digite sua idade: ");
         scanf("%d", &idade);
         
