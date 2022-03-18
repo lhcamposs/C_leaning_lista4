@@ -5,14 +5,15 @@ void main(){
 	char codigo;
 
 	while(valor != 0){
-	    printf("Digite o valor: ");
+	    printf("Digite o valor: \n");
 		scanf("%f", &valor);
 		if (valor <= 0){
 		    break;
 		}
 		getchar();
 		
-		printf("Digite o codigo da mercadoria: ");
+		printf("Digite o codigo da mercadoria: \n");
+		printf("L- limpeza A- alimentacao H- higiene\n");
 		scanf("%c*c", &codigo);
 		getchar();
 		
@@ -29,9 +30,10 @@ void main(){
 				break;
 		}
 	}
-	printf("\n\nTotal de gasto alimentacao: %.2f R$", alimentacao);
+	printf("\nTotal de gasto alimentacao: %.2f R$", alimentacao);
 	printf("\nTotal de gasto Limpeza: %.2f R$", limpeza);
 	printf("\nTotal de gasto Higiene: %.2f R$", higiene);
 	printf("\nTotal de gastos geral: %.2f R$\n", (alimentacao + limpeza + higiene));
-	
+
 }
+
