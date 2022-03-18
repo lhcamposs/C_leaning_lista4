@@ -1,18 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(){
-	float valor = 1;
-	float alimentacao = 0, limpeza = 0, higiene = 0;
+void main(){
+	float valor = 1, alimentacao = 0, limpeza = 0, higiene = 0;
 	char codigo;
 
 	while(valor != 0){
+	    printf("Digite o valor: ");
+		scanf("%f", &valor);
+		if (valor <= 0){
+		    break;
+		}
+		getchar();
+		
 		printf("Digite o codigo da mercadoria: ");
 		scanf("%c*c", &codigo);
 		getchar();
-		printf("Digite o valor: ");
-		scanf("%f", &valor);
-		getchar();
+		
+		
 		switch(codigo){
 			case 'l':
 				limpeza += valor;
