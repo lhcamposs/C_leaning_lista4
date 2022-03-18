@@ -33,5 +33,5 @@ void main(){
 	printf("\nTotal de gasto Limpeza: %.2f R$", limpeza);
 	printf("\nTotal de gasto Higiene: %.2f R$", higiene);
 	printf("\nTotal de gastos geral: %.2f R$\n", (alimentacao + limpeza + higiene));
-	return 0;
+	
 }
