@@ -2,10 +2,10 @@
 
 void main()
 {
-    int idade, opiniao, bom=0, regular=0, excelente=0, i, contEx;
-    float porcentagem, mediaIdade;
+    int idade, opiniao, bom=0, regular=0, excelente=0, i;
+    float porcentagem, mediaIdade=0;
     
-    for(i=0; i<10; i++){
+    for(i=0; i<3; i++){
         printf("Digite sua idade: ");
         scanf("%d", &idade);
         
@@ -28,21 +28,29 @@ void main()
             regular++;
         }
         else{
-            printf("Essa opiniao não existe, tente novamente\n");
+            break;
         }
         
     }
-    mediaIdade = mediaIdade / excelente;
-    
-    porcentagem = bom;
-    porcentagem = porcentagem / (i - 1);
     
     printf("O resultado da pesquisa: \n");
-    printf("A media da idade das pessoas que responderam excelente: %f\n", mediaIdade);
+    
+    if( excelente != 0 ){
+        mediaIdade = mediaIdade / excelente;
+        printf("A media da idade das pessoas que responderam excelente: %f\n", mediaIdade);
+        
+    }
+    else{
+        printf("Nenhuma pessoa responderam execelente. \n");
+    }
+    
+    
+    porcentagem = bom;
+    porcentagem = porcentagem / i * 100  ;
+    
+    
+    
     printf("O porcentual de pessoas que responderam bom: %f\n", porcentagem);
     printf("A quantidade de pessoas que responderam regular: %d", regular);
     
 }
-
-
-
